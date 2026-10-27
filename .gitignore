@@ -1,0 +1,66 @@
+# ---------------------------------------------------------------------------
+# NEVER COMMIT PRIVATE MODEL WEIGHTS OR LOCAL SCAN DATA
+# ---------------------------------------------------------------------------
+# WeightWise is developed in a folder that may contain real model libraries.
+# Only source files are ever staged explicitly. These rules are a second layer
+# of protection and intentionally cover every format the scanner recognizes.
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.gguf
+*.ggml
+*.onnx
+*.ort
+*.engine
+*.plan
+*.trt
+*.tflite
+*.h5
+*.hdf5
+*.pb
+*.msgpack
+*.npz
+*.npy
+*.model
+*.params
+*.pkl
+*.pickle
+*.mlmodel
+*.sft
+*.litertlm
+*.task
+*.tflitemodel
+
+# Local runtime data: cached hashes contain absolute private file paths.
+data/
+hash-cache.json
+*.tmp
+
+# Test and UI scratch artifacts
+.uitest/
+.testtmp/
+ui-*.png
+_probe_*.py
+_preview_*.py
+_verify_*.py
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Environment and logs
+.env
+.env.*
+*.log
+*.log.*
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
